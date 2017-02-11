@@ -3,5 +3,5 @@
 require 'sinatra'
 
 get '/' do
-  send_file 'node['sinatra_deploy']['resume']'
+  send_file "#{node['sinatra_deploy']['resume']}"
 end
